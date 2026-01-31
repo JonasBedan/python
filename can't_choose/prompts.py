@@ -24,7 +24,7 @@ def generate_categories(options, user_preferences):
     - Categories must be short
     - Categories must be measurable
     - No explanations
-    - Return as a JSON array of strings
+    - Return as a JSON array of strings in this format ['1','2','3','4']
     """
     return prompt
 
@@ -44,6 +44,7 @@ def fill_categories(options, categories_json):
 
 
     Rules:
+    - pay attention to the weight of each category to the user
     - Be objective
     - Use the same scale for all options
     - No explanations
